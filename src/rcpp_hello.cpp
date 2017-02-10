@@ -10,13 +10,13 @@ using namespace Rcpp;
 //   http://adv-r.had.co.nz/Rcpp.html
 //
 // and browse examples of code using Rcpp at:
-// 
+//
 //   http://gallery.rcpp.org/
 //
 
 // [[Rcpp::export]]
 List rcpp_hello() {
-  CharacterVector x = CharacterVector::create("foo", "bar");
+  CharacterVector x = CharacterVector::create("Hello", "World!");
   NumericVector y   = NumericVector::create(0.0, 1.0);
   List z            = List::create(x, y);
   return z;
